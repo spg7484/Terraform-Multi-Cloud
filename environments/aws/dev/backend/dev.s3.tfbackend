@@ -1,0 +1,7 @@
+bucket = "garedd-terraform-state-dev"
+key    = "aws/dev/platform.tfstate"
+region = "ap-southeast-6"
+
+encrypt      = true
+kms_key_id   = "arn:aws:kms:ap-southeast-6:867169974453:key/0ae4e995-9fc4-4929-bec3-a861bbc7440c"
+use_lockfile = true

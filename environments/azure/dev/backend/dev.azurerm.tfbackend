@@ -1,0 +1,6 @@
+storage_account_name = "gareddterraformstatedev"
+container_name       = "tfstate"
+key                  = "azure/dev/platform.tfstate"
+
+use_azuread_auth = true
+use_cli          = true
