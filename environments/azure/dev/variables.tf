@@ -38,3 +38,14 @@ variable "additional_tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "network" {
+  description = "Azure DEV network configuration."
+
+  type = object({
+    resource_group_name          = string
+    vnet_cidr                    = string
+    aca_subnet_cidr              = string
+    private_endpoint_subnet_cidr = string
+  })
+}

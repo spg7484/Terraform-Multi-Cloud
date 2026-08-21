@@ -27,3 +27,23 @@ output "common_tags" {
   description = "Common Azure tags."
   value       = local.common_tags
 }
+
+output "network_resource_group_name" {
+  value = module.networking.resource_group_name
+}
+
+output "vnet_id" {
+  value = module.networking.vnet_id
+}
+
+output "vnet_name" {
+  value = module.networking.vnet_name
+}
+
+output "aca_subnet_id" {
+  value = module.networking.aca_subnet_id
+}
+
+output "private_endpoint_subnet_id" {
+  value = module.networking.private_endpoint_subnet_id
+}
